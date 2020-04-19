@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CodeCov
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -20,11 +20,19 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@develop  
+    - uses: actions/checkout@master  
+    - name: Run npm
+      run: 
+        npm install
+    - name: Run jest
+      run: 
+        npm run test
     # Codecov set up
+    - name: Upload codecoverage to Codecov
     - uses: codecov/codecov-action@v1.0.6
       with:
-          file: ./coverage.xml # optional
-          flags: unittests # optional
-          name: codecov-umbrella # optional
-          fail_ci_if_error: true # optional (default = false)
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./coverage/clover.xml # optional
+        flags: unittests # optional
+        name: codecov-umbrella # optional
+        fail_ci_if_error: true # optional (default = false)
