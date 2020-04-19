@@ -1,4 +1,8 @@
 import React from 'react'
-import { TextInput } from 'react-native'
+import { TextInput, View } from 'react-native'
 
-export const CustomTextInput = ({...props}) => (<TextInput {...props}/>)
+export const CustomTextInput = () => (
+    <View>
+        <TextInput />
+    </View>
+)

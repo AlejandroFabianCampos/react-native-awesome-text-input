@@ -3,11 +3,9 @@
   "version": "0.0.1",
   "description": "A simple and reusable react native compatible text input that packs animations and extra styling on top of the core text input component from react native's package",
   "main": "src/index.ts",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "test": "jest --clearCache && jest --coverage"
+    "test": "jest --clearCache && jest --coverage",
+    "build": "webpack --mode production --display-modules"
   },
   "repository": {
     "type": "git",
@@ -28,10 +26,6 @@
     "url": "https://github.com/AlejandroFabianCampos/react-native-awesome-text-input/issues"
   },
   "homepage": "https://github.com/AlejandroFabianCampos/react-native-awesome-text-input#readme",
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-native": "^0.62.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
@@ -45,8 +39,13 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "jest": "^25.3.0",
-    "react-test-renderer": "^16.13.1",
+    "react": "^16.9.0",
+    "react-native": "^0.61.0",
+    "react-test-renderer": "^16.9.0",
     "ts-jest": "^25.4.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
   }
 }
