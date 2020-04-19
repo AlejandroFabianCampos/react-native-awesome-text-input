@@ -1,0 +1,5 @@
+#Ignore ci stuff
+.circleci
+.github
+#Other stuff to ignore
+/coverage

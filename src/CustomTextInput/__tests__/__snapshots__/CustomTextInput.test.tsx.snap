@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<TextInput
-  allowFontScaling={true}
-  placeholder="Placeholder"
-  rejectResponderTermination={true}
-  underlineColorAndroid="transparent"
-/>
+<View>
+  <TextInput
+    allowFontScaling={true}
+    rejectResponderTermination={true}
+    underlineColorAndroid="transparent"
+  />
+</View>
 `;
