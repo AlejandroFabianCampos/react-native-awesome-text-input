@@ -2,4 +2,4 @@
 .circleci
 .github
 #Other stuff to ignore
-/coverage
+**/coverage
