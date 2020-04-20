@@ -1,1 +1,1 @@
-export * from './CustomTextInput'
+export * from './CustomTextInput/CustomTextInput'

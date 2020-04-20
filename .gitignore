@@ -1,2 +1,6 @@
 #Ignore dependencies
-node_modules
+/node_modules
+#Ignore local codecoverage
+**/coverage
+#Ignore build
+/dist
