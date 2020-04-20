@@ -1,6 +1,6 @@
 #Ignore dependencies
 /node_modules
 #Ignore local codecoverage
-/coverage
+**/coverage
 #Ignore build
 /dist
