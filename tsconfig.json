@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "module": "commonjs",
+      "module": "ES6",
       "noImplicitAny": true,
       "removeComments": true,
       "preserveConstEnums": true,
@@ -8,9 +8,8 @@
       "jsx": "react-native",
       "esModuleInterop": true,
       "declaration": true,
-      "outDir": "dist",
-      "skipLibCheck": true
+      "outDir": "dist"
     },
     "include": ["src/**/*"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "**/__tests__/**"]
 }
