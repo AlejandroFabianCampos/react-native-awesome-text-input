@@ -1,7 +1,7 @@
 {
   "name": "react-native-awesome-text-input",
-  "version": "0.0.23-beta.0",
-  "description": "A simple and reusable react native compatible text input that packs animations and extra styling on top of the core text input component from react native's package",
+  "version": "1.0.1",
+  "description": "A simple and reusable react native compatible text input that packs animations and extra styling on top of the core React Native's text input.",
   "main": "dist/main.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -36,6 +36,7 @@
     "@types/react-native": "^0.62.2",
     "@types/react-test-renderer": "^16.9.2",
     "babel-loader": "^8.1.0",
+    "babel-preset-react": "^6.24.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "jest": "^25.3.0",
