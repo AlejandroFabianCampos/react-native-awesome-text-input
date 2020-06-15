@@ -1,15 +1,15 @@
 {
-    "compilerOptions": {
-      "module": "ES6",
-      "noImplicitAny": true,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "sourceMap": true,
-      "jsx": "react-native",
-      "esModuleInterop": true,
-      "declaration": true,
-      "outDir": "dist"
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "**/__tests__/**"]
+  "compilerOptions": {
+    "module": "ES6",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "jsx": "react-native",
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/node_modules/**", "**/__tests__/**"]
 }
