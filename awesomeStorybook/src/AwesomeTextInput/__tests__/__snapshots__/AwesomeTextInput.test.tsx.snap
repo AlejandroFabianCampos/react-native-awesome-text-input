@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 18,
+        "left": 10,
+        "position": "absolute",
+        "top": 12,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "#c4c4c4",
+        "borderRadius": 5,
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      rejectResponderTermination={true}
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;

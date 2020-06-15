@@ -2,4 +2,13 @@
 .circleci
 .github
 #Other stuff to ignore
-/coverage
+/coverage 
+/awesomeStorybook
+/examples
+.babelrc.js
+jest.config.js
+rollup.config.js
+tsconfig.json
+
+#Local dev configs to ignore 
+.vscode
