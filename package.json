@@ -45,6 +45,8 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "jest": "^25.3.0",
     "metro-react-native-babel-preset": "^0.59.0",
+    "react": "^16.9.0",
+    "react-native": "^0.62.2",
     "react-test-renderer": "^16.9.0",
     "ts-jest": "^25.4.0",
     "ts-loader": "^7.0.5",
