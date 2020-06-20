@@ -6,6 +6,7 @@ module.exports = {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'main.js',
+      libraryTarget: 'commonjs'
     },
     externals: [
         'react',
@@ -22,5 +23,8 @@ module.exports = {
     },
     resolve: {
         extensions: [ '.ts', '.tsx', '.js' ]
+    },
+    optimization: {
+        minimize: false
     }
 };

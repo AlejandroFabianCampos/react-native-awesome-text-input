@@ -8,8 +8,9 @@
     "jsx": "react",
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "allowJs": false
   },
   "include": ["awesomeStorybook/src/**/*"],
-  "exclude": ["**/node_modules/**", "**/__tests__/**"]
+  "exclude": ["**/node_modules/**", "**/__tests__/**", "**/dist/**"]
 }
