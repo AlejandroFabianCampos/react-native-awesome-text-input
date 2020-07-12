@@ -75,6 +75,7 @@ export const AwesomeTextInput: FC<AwesomeTextInputProps> = ({
                     onBlur={customOnBlur}
                     onChangeText={customOnChangeText}
                     {...commonTextInputProps}
+                    testID="input"
                 />
             </View>
         </View>
