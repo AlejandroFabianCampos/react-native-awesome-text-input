@@ -22,13 +22,17 @@ storiesOf('AwesomeTextInput', module)
   )
   .add('Common', () => (
     <AwesomeTextInput 
-      onChange={(e) => console.log('something changed', e)}
+      onFocus={() => console.log('was focused')}
+      onChangeText={(e) => console.log('something changed', e)}
+      onBlur={() => console.log('was blurred')}
       placeholder="asd"
     />
   ))
   .add('With label', () => (
     <AwesomeTextInput 
-      onChange={(e) => console.log('something changed', e)}
+      onFocus={() => console.log('was focused')}
+      onChangeText={(e) => console.log('something changed', e)}
+      onBlur={() => console.log('was blurred')}
       label="Your label"
     />
   ))
