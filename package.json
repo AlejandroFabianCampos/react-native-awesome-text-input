@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest --clearCache && jest --coverage",
+    "test": "jest --coverage",
     "build": "webpack"
   },
   "repository": {

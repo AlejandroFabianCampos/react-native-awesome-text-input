@@ -1,5 +1,5 @@
 import React, { FC, useRef, useState, useEffect, useCallback } from 'react'
-import { Animated, Text, TextInput, View, TextInputProps, StyleSheet, ViewStyle, TextStyle, Button, Keyboard, NativeSyntheticEvent, TextInputFocusEventData } from 'react-native'
+import { Animated, TextInput, View, TextInputProps, StyleSheet, ViewStyle, TextStyle, NativeSyntheticEvent, TextInputFocusEventData } from 'react-native'
 
 interface StyleStructure {
     container: ViewStyle,
@@ -71,10 +71,10 @@ export const AwesomeTextInput: FC<AwesomeTextInputProps> = ({
             </Animated.Text>
             <View style={styles.inputContainer}>
                 <TextInput
+                    {...commonTextInputProps}
                     onFocus={customOnFocus}
                     onBlur={customOnBlur}
                     onChangeText={customOnChangeText}
-                    {...commonTextInputProps}
                     testID="input"
                 />
             </View>
