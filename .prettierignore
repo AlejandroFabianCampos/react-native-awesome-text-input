@@ -8,5 +8,10 @@
 #Ignore build
 /dist
 
+#Other configs
+.babelrc.js
+jest.config.js
+rollup.config.js
+
 #Local dev configs to ignore 
 .vscode

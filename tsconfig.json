@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "module": "ES6",
+    "module": "commonjs",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "jsx": "react-native",
+    "jsx": "react",
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "allowJs": false
   },
-  "include": ["src/**/*"],
-  "exclude": ["**/node_modules/**", "**/__tests__/**"]
+  "include": ["awesomeStorybook/src/**/*"],
+  "exclude": ["**/node_modules/**", "**/__tests__/**", "**/dist/**"]
 }
