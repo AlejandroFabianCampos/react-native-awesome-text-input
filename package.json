@@ -6,7 +6,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --coverage",
-    "build": "webpack"
+    "build": "webpack",
+    "format": "prettier --write awesomeStorybook/**/*.{js,tsx,ts,tsx}",
+    "check-format": "prettier --check awesomeStorybook/**/*.{js,tsx,ts,tsx}"
   },
   "repository": {
     "type": "git",
@@ -44,6 +46,7 @@
     "babel-preset-react": "^6.24.1",
     "jest": "^25.3.0",
     "metro-react-native-babel-preset": "^0.59.0",
+    "prettier": "2.0.5",
     "react": "^16.9.0",
     "react-native": "^0.62.2",
     "react-test-renderer": "^16.9.0",
