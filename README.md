@@ -24,3 +24,12 @@ export default function App() {
   );
 }
 ```
+| Prop | Values | Example |
+| ---- | -------- | ---- |
+| label | string | Example label |
+| customStyles | { <br> container?: ReactNative.ViewStyle, <br> title?: ReactNative.TextStyle, <br> inputContainer?: ReactNative.ViewStyle <br> } | { <br> container: { borderRadius: 5, backgroundColor: 'purple' } , <br> title: { color: "white" }, <br> inputContainer: { backgroundColor: 'blue' } <br> } |
+| ...any ReactNative.TextInput props | [ReactNative.TextInput props](https://reactnative.dev/docs/textinput#props) | secureTextEntry: true <br><br> // Hide the text input for passwords |
+
+
+### Are pull requests and feature requests welcomed? 
+For sure! Don't hesitate to open issues with the `enhancement` tag or open pull requests for bugfixes/enhancements.
