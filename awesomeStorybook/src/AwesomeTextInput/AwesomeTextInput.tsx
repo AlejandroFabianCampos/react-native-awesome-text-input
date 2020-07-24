@@ -28,8 +28,18 @@ export const AwesomeTextInput: FC<AwesomeTextInputProps> = ({
 	...commonTextInputProps
 }) => {
 	const styles: StyleStructure = {
-		...localStyles,
-		...customStyles,
+		container: {
+			...localStyles.container,
+			...customStyles?.container,
+		},
+		inputContainer: {
+			...localStyles.inputContainer,
+			...customStyles?.inputContainer,
+		},
+		title: {
+			...localStyles.title,
+			...customStyles?.title,
+		},
 	};
 	const [isFocused, setIsFocused] = useState(false);
 	const [currentValueIsNone, setCurrentValueIsNone] = useState(true);
