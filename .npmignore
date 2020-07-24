@@ -10,6 +10,9 @@
 jest.config.js
 rollup.config.js
 tsconfig.json
+.prettierignore
+.prettierrc.json
+webpack.config.js
 
 #Local dev configs to ignore 
 .vscode
