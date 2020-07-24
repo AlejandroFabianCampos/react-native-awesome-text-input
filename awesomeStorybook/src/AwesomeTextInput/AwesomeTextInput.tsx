@@ -30,15 +30,15 @@ export const AwesomeTextInput: FC<AwesomeTextInputProps> = ({
 	const styles: StyleStructure = {
 		container: {
 			...localStyles.container,
-			...customStyles.container,
+			...customStyles?.container,
 		},
 		inputContainer: {
 			...localStyles.inputContainer,
-			...customStyles.inputContainer,
+			...customStyles?.inputContainer,
 		},
 		title: {
 			...localStyles.title,
-			...customStyles.title,
+			...customStyles?.title,
 		},
 	};
 	const [isFocused, setIsFocused] = useState(false);

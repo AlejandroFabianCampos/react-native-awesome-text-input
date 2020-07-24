@@ -57,3 +57,67 @@ exports[`Matches snapshot 1`] = `
   </View>
 </View>
 `;
+
+exports[`Styling matches snapshot 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderColor": "grey",
+          "borderRadius": 10,
+          "borderWidth": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "backgroundColor": "white",
+            "fontSize": 18,
+            "left": 10,
+            "position": "absolute",
+            "top": 12,
+          }
+        }
+      >
+        Test label
+      </Text>
+      <View
+        style={
+          Object {
+            "borderBottomWidth": 1,
+            "borderColor": "#c4c4c4",
+            "borderRadius": 5,
+            "padding": 10,
+            "width": "100%",
+          }
+        }
+      >
+        <TextInput
+          allowFontScaling={true}
+          rejectResponderTermination={true}
+          testID="input"
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
