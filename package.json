@@ -1,6 +1,6 @@
 {
   "name": "react-native-awesome-text-input",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simple and reusable react native compatible text input that packs animations and extra styling on top of the core React Native's text input.",
   "main": "dist/main.js",
   "types": "dist/index.d.ts",
