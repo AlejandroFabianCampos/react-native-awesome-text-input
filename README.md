@@ -12,19 +12,59 @@ With npm:
 `npm i react-native-awesome-text-input`
 
 With yarn: 
-`yarn install react-native-awesome-text-input`
+`yarn add react-native-awesome-text-input`
 
-## To implement it is as easy as to import it and use it like a common React native's text input:
+## Examples
+
+### Simple label input
 
 ```javascript
 import { AwesomeTextInput } from 'react-native-awesome-text-input';
 
 export default function App() {
   return (
-    <AwesomeTextInput label="Label test" />
+    <AwesomeTextInput label="Simple label" />
   );
 }
 ```
+
+### Password input 
+
+```javascript
+import { AwesomeTextInput } from 'react-native-awesome-text-input';
+
+export default function App() {
+  return (
+    <AwesomeTextInput label="Password" secureTextEntry={true} />
+  );
+}
+```
+
+### All round bordered input 
+
+```javascript
+import { AwesomeTextInput } from 'react-native-awesome-text-input';
+
+export default function App() {
+  return (
+    <AwesomeTextInput 
+      label="Bordered input" 
+      customStyles={{ 
+        container: { 
+          borderWidth: 1, 
+          borderColor: 'grey', 
+          borderRadius: 10 
+        }, 
+        title: { 
+          backgroundColor: "white" 
+        } 
+      }} />
+  );
+}
+```
+
+## API
+
 | Prop | Values | Example |
 | ---- | -------- | ---- |
 | label | string | Example label |
