@@ -35,11 +35,32 @@ storiesOf("AwesomeTextInput", module)
 			placeholder="asd"
 		/>
 	))
-	.add("With label", () => (
+	.add("Simple label input", () => (
 		<AwesomeTextInput
 			onFocus={() => console.log("was focused")}
 			onChangeText={(e) => console.log("something changed", e)}
 			onBlur={() => console.log("was blurred")}
 			label="Your label"
+		/>
+	))
+	.add("Password input", () => (
+		<AwesomeTextInput
+			onFocus={() => console.log("was focused")}
+			onChangeText={(e) => console.log("something changed", e)}
+			onBlur={() => console.log("was blurred")}
+			label="Password"
+			secureTextEntry={true}
+		/>
+	))
+	.add("All round bordered input", () => (
+		<AwesomeTextInput
+			onFocus={() => console.log("was focused")}
+			onChangeText={(e) => console.log("something changed", e)}
+			onBlur={() => console.log("was blurred")}
+			label="Bordered input"
+			customStyles={{
+				container: { borderWidth: 1, borderColor: "grey", borderRadius: 10 },
+				title: { backgroundColor: "white" },
+			}}
 		/>
 	));

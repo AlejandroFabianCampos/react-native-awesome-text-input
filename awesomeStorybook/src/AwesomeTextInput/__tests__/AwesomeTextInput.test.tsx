@@ -10,6 +10,20 @@ test("Matches snapshot", async () => {
 	expect(baseElement).toMatchSnapshot();
 });
 
+test("Styling matches snapshot", async () => {
+	const { baseElement } = render(
+		<AwesomeTextInput
+			label="Test label"
+			customStyles={{
+				container: { borderWidth: 1, borderColor: "grey", borderRadius: 10 },
+				title: { backgroundColor: "white" },
+			}}
+		/>
+	);
+
+	expect(baseElement).toMatchSnapshot();
+});
+
 test("Custom callbacks work correctly", async () => {
 	const onFocus = jest.fn();
 	const onChangeText = jest.fn((text) => text);
