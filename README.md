@@ -4,7 +4,8 @@
 # react-native-awesome-text-input
 A simple lib to share an easy to implement animated custom text input for React native
 
-![Awesome Text Input Demo](examples/gifs/AwesomeTextInput1-0-2-testgif.gif)
+![Awesome Text Input Demo](examples/gifs/AwesomeTextInput1-1-2-testgif1.gif)
+![Awesome Text Input Demo](examples/gifs/AwesomeTextInput1-1-2-testgif2.gif)
 
 ## How to install 
 With npm:
