@@ -2,7 +2,14 @@ version: 2.1
 orbs:
   node: circleci/node@3.0.1
 jobs:
-  build-and-test:
+  build:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+  test-and-upload-coverage:
     executor:
       name: node/default
     steps:
@@ -10,7 +17,28 @@ jobs:
       - run: npm install
       - run: npm test
       - run: bash <(curl -s https://codecov.io/bash)
+  bump-version:
+    executor:
+      name: node/default
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "db:67:79:8e:ee:2b:33:38:97:76:c2:01:1c:a8:2f:f8"
+      - checkout
+      - run: git config user.email "circleci-agent@false.com"
+      - run: git config user.name $CIRCLE_USERNAME
+      - run: npm install
+      - run: npm run release
+      - run: git push --follow-tags origin $CIRCLE_BRANCH
 workflows:
     build-and-test:
       jobs:
-        - build-and-test
+        - build
+        - test-and-upload-coverage
+        - bump-version:
+            filters: 
+              branches:
+                only: develop
+            requires: 
+              - build
+              - test-and-upload-coverage
