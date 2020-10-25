@@ -1,5 +1,15 @@
-[![<AlejandroFabianCampos>](https://circleci.com/gh/AlejandroFabianCampos/react-native-awesome-text-input.svg?style=svg)](https://circleci.com/gh/AlejandroFabianCampos/react-native-awesome-text-input)
+[![<AlejandroFabianCampos>](https://circleci.com/gh/AlejandroFabianCampos/react-native-awesome-text-input.svg?branch=master&style=svg)](https://circleci.com/gh/AlejandroFabianCampos/react-native-awesome-text-input)
 [![codecov](https://codecov.io/gh/AlejandroFabianCampos/react-native-awesome-text-input/branch/develop/graph/badge.svg)](https://codecov.io/gh/AlejandroFabianCampos/react-native-awesome-text-input)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/react-native-awesome-text-input)](https://www.npmjs.com/package/react-native-awesome-text-input)
+[![npm](https://img.shields.io/npm/v/react-native-awesome-text-input)](https://www.npmjs.com/package/react-native-awesome-text-input)
+[![npm](https://img.shields.io/npm/dy/react-native-awesome-text-input)](https://www.npmjs.com/package/react-native-awesome-text-input)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/AlejandroFabianCampos/react-native-awesome-text-input?color=green)](https://github.com/AlejandroFabianCampos/react-native-awesome-text-input/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub issues](https://img.shields.io/github/issues-raw/AlejandroFabianCampos/react-native-awesome-text-input?color=green)](https://github.com/AlejandroFabianCampos/react-native-awesome-text-input/issues?q=is%3Aopen+is%3Aissue)
+![npm peer dependency version](https://img.shields.io/npm/dependency-version/react-native-awesome-text-input/peer/react-native)
+![NPM](https://img.shields.io/npm/l/react-native-awesome-text-input)
+[![GitHub watchers](https://img.shields.io/github/watchers/AlejandroFabianCampos/react-native-awesome-text-input?style=social)](https://github.com/AlejandroFabianCampos/react-native-awesome-text-input/subscription)
+[![GitHub Repo stars](https://img.shields.io/github/stars/AlejandroFabianCampos/react-native-awesome-text-input?style=social)](https://github.com/AlejandroFabianCampos/react-native-awesome-text-input)
 
 # react-native-awesome-text-input
 A simple lib to share an easy to implement animated custom text input for React native
